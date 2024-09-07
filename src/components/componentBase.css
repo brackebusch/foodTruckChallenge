@@ -1,0 +1,21 @@
+.mainContent {
+  background-color: lightslategray;
+}
+
+.foodTruckCard {
+    border: 1px solid black; 
+    background-color: gray;
+    display: flex; 
+    flex-direction: column;
+}
+
+.foodTruckCard:hover {
+    cursor: pointer;
+}
+
+.policeCard {
+    border: 1px solid gray; 
+    background-color: black;
+    display: 'flex'; 
+    flex-direction: 'column'
+}
