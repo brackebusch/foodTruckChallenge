@@ -11,7 +11,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://github.com/brackebusch/foodTruckChallenge",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
