@@ -54,3 +54,5 @@ I started this as a TypeScript project. However the [SODA.js](https://github.com
 After the library proved unusable I pivoted to using the [API](https://data.sfgov.org/resource/wg3w-h783.json). However, I was only able to run simple queries and I was getting errors from their server due to type issues. If I submitted a query based on an id, the response would have `query.soql.type-mismatch; Type mismatch for op$=, is number;` complaining that the query for an Id should be a number but I was submitting a string. Lacking the ability to convert my url to a number (and several other query issues) I opted to have the data locally.
 
 There is a mix of inline styling and .css files used. The philosophy here is: where css usage depends on application logic I'm using inline styling for clarity. When the css is used purely for appearance then it lives in the .css file.
+
+As the project grows, it would be best to move each component into a folder along with the styling associated with it.
