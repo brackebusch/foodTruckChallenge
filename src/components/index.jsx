@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import foodTruckData from "../data/foodTruckData.json";
 import policeData from "../data/policeData.json";
-import { FoodTruckCard } from "./foodTruckCard/foodTruckCard";
+import { FoodTruckCard } from "./foodTruckCard";
 import { getDistanceFromLatLonInKm } from "../utils";
-import { PoliceReportCard } from "./policeReportCard/policeReportCard";
+import { PoliceReportCard } from "./policeReportCard";
 import "./componentBase.css";
 
 const FoodTruckPublicSafety = () => {
@@ -40,7 +40,7 @@ const FoodTruckPublicSafety = () => {
           datum.longitude,
           foodLat,
           foodLong
-        ) < 1
+        ) < 0.75
       );
     });
     setSelectedFoodTruckId(id);
@@ -98,7 +98,7 @@ const FoodTruckPublicSafety = () => {
                   {!noPoliceData && (
                     <>
                       <h3>
-                        Police Incidents within 1 Km of {foodTruck.applicant}
+                        Police Incidents within .75 Km of {foodTruck.applicant}
                       </h3>
                       {filteredPoliceData.map((policeReport) => (
                         <PoliceReportCard

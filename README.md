@@ -41,7 +41,7 @@ There are some styling changes I would make with extra time:
 
 - Style scrollbar on police data
 - Do something with the empty space between food truck cards when they are not the same height
-- Add mobile support
+- Add mobile support. When the screen is small the police data does not render correctly at the moment.
 - Add loading state (assuming api calls)
 - Add buttons ability to toggle what fields are rendered on food truck data and police card data
 - Update color scheme

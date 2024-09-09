@@ -83,6 +83,7 @@ input:focus {
   position: absolute;
   z-index: 2;
   background-color: #1e56a0;
+  border: 2px solid #1e56a0;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
