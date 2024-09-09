@@ -1,11 +1,10 @@
-import React from 'react';
-import './App.css';
-import FoodTruckPublicSafety from './components';
+import React from "react";
+import FoodTruckPublicSafety from "./components";
 
 function App() {
   return (
     <div className="App">
-        <FoodTruckPublicSafety />
+      <FoodTruckPublicSafety />
     </div>
   );
 }

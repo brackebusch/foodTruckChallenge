@@ -1,21 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 .mainContent {
-  background-color: lightslategray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  font-size: 2rem;
+  border: 1px solid #1e56a0;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-top: 0px;
+  align-self: center;
+}
+
+input:focus {
+  border: 2px solid lightgray;
+}
+
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchSection > h1 {
+  margin: 1rem;
+}
+
+.searchSection > label {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .foodTruckCard {
-    border: 1px solid black; 
-    background-color: gray;
-    display: flex; 
-    flex-direction: column;
+  border: 1px solid #163172;
+  border-radius: 3px;
+  background-color: #d6e4f0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  transition: box-shadow 0.3s ease;
+  z-index: 1;
 }
 
+.foodTruckCard:focus,
 .foodTruckCard:hover {
-    cursor: pointer;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #163172;
+  border-color: #163172;
+}
+
+.foodTruckCard > h2 {
+  margin: 0.5rem auto;
+}
+
+.foodDescription {
+  text-align: left;
+}
+
+.policeContainer {
+  width: 640px;
+  position: absolute;
+  z-index: 2;
+  background-color: #1e56a0;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  min-height: 200px;
+  max-height: 40vh;
+}
+
+.policeContainer > h3 {
+  margin: 0.5rem;
+  color: #f6f6f6;
 }
 
 .policeCard {
-    border: 1px solid gray; 
-    background-color: black;
-    display: 'flex'; 
-    flex-direction: 'column'
+  border: 1px solid #d6e4f0;
+  border-radius: 3px;
+  background-color: #d6e4f0;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0.5vw;
 }
